@@ -49,13 +49,63 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.16.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.9.2, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.13, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.ApplicationInsights": {
+              "target": "Package",
+              "version": "[4.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using NET_Core_Task.DAL.Persistence;
+using NET_Core_Task.WebAPI.Extensions;
 
 namespace NET_Core_Task
 {
@@ -11,7 +12,8 @@ namespace NET_Core_Task
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddCustomServices();
+            builder.Services.ConfigureSerilog(builder);
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

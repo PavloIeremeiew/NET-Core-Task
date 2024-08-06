@@ -10,5 +10,8 @@ namespace NET_Core_Task.DAL.Repositories.Interfaces.Base
         ICoursesRepository CoursesRepository { get; }
         IStudentsRepository StudentsRepository { get; }
         ITeachersRepository TeachersRepository { get; }
+
+        public int SaveChanges();
+        public Task<int> SaveChangesAsync();
     }
 }

@@ -45,5 +45,15 @@ namespace NET_Core_Task.DAL.Repositories.Realizations.Base
 
             return repo;
         }
+
+        public int SaveChanges()
+        {
+            return _universityDBContext.SaveChanges();
+        }
+
+        public async Task<int> SaveChangesAsync()
+        {
+            return await _universityDBContext.SaveChangesAsync();
+        }
     }
 }
