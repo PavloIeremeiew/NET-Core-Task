@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NET-Core-Task.props" />
+</Project>

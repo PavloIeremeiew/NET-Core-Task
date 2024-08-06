@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using NET_Core_Task.DAL.Persistence;
+
 namespace NET_Core_Task
 {
     public class Program
@@ -13,6 +16,13 @@ namespace NET_Core_Task
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services
+                .AddDbContext<UniversityDBContext>(
+                op => op.UseMySql(
+                    connectionString,
+                    ServerVersion.AutoDetect(connectionString)));
 
             var app = builder.Build();
 
