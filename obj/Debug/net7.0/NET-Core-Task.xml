@@ -24,7 +24,7 @@
         </member>
         <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Create(NET_Core_Task.BLL.DTO.Teacher.TeacherDTO)">
             <summary>
-            
+             Create teacher
             </summary>
             <param name="teacher"></param>
             <returns></returns>

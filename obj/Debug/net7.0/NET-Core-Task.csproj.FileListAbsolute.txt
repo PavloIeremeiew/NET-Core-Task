@@ -82,3 +82,9 @@ C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core-Task.sourcel
 C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core.D3BF7A9E.Up2Date
 C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\NET-Core-Task.xml
 C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core-Task.xml
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\Castle.Core.dll
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\Moq.dll
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\xunit.abstractions.dll
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\xunit.assert.dll
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\xunit.core.dll
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\xunit.execution.dotnet.dll
