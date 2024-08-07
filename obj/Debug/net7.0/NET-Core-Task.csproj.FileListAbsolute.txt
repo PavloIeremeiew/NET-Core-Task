@@ -80,3 +80,5 @@ C:\Users\perem\source\repos\NET-Core-Task\bin\Debug\net7.0\Mono.TextTemplating.d
 C:\Users\perem\source\repos\NET-Core-Task\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core-Task.sourcelink.json
 C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core.D3BF7A9E.Up2Date
+C:\Users\perem\Source\Repos\NET-Core-Task\bin\Debug\net7.0\NET-Core-Task.xml
+C:\Users\perem\Source\Repos\NET-Core-Task\obj\Debug\net7.0\NET-Core-Task.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NET-Core-Task</name>
+    </assembly>
+    <members>
+        <member name="T:NET_Core_Task.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.GetAll">
+            <summary>
+            Finds a list of all teachers
+            </summary>
+            <returns>IEnumerable of TeacherDTO </returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Create(NET_Core_Task.BLL.DTO.Teacher.TeacherDTO)">
+            <summary>
+            
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

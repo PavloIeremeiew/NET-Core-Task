@@ -7,6 +7,10 @@ namespace NET_Core_Task.WebAPI.Controllers
 {
     public class TeacherController : BaseApiController
     {
+        /// <summary>
+        /// Finds a list of all teachers
+        /// </summary>
+        /// <returns>IEnumerable of TeacherDTO </returns>
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -19,6 +23,11 @@ namespace NET_Core_Task.WebAPI.Controllers
         //    return HandleResult(await Mediator.Send(new GetTeacherByIdQuery(id)));
         //}
 
+        /// <summary>
+        ///  Create teacher
+        /// </summary>
+        /// <param name="teacher"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] TeacherDTO teacher)
         {
