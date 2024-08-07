@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VRv2Wmcd3as1g5P9GSwFbQKPpVToblcJEp32UWtf3JVCIAXAuZqQzby2gBrYpu1Thw+dK14M9wFl/ECdJL9MFg==",
+  "dgSpecHash": "Ao8kMPYtyKqUgHUq9oaso2tkZPEfPqWBy3RAGRAnevxL4PqTWF7/id1ayUjL6XuyCrOBZlp9M8G5fXXR/UKV2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\NET-Core-Task.csproj",
+  "projectFilePath": "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\NET-Core-Task.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perem\\.nuget\\packages\\ardalis.specification\\8.0.0\\ardalis.specification.8.0.0.nupkg.sha512",
     "C:\\Users\\perem\\.nuget\\packages\\ardalis.specification.entityframeworkcore\\8.0.0\\ardalis.specification.entityframeworkcore.8.0.0.nupkg.sha512",

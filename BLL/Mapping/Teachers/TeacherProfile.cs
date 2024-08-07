@@ -6,7 +6,7 @@ namespace NET_Core_Task.BLL.Mapping.Teachers
 {
     public class TeacherProfile : Profile
     {
-        protected TeacherProfile()
+        public TeacherProfile()
         {
             CreateMap<Teacher, TeacherDTO>().ReverseMap();
         }

@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\bll\\mediatr\\teachers\\getall\\getallteachershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:bll\\mediatr\\teachers\\getall\\getallteachershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\bll\\mapping\\teachers\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:bll\\mapping\\teachers\\teacherprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:webapi\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 253,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9a7cebbb-dc5c-4986-bc49-962da46aa506}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TeacherProfile.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\Mapping\\Teachers\\TeacherProfile.cs",
+              "RelativeDocumentMoniker": "BLL\\Mapping\\Teachers\\TeacherProfile.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\Mapping\\Teachers\\TeacherProfile.cs",
+              "RelativeToolTip": "BLL\\Mapping\\Teachers\\TeacherProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T10:36:29.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "WebAPI\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T10:28:08.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T10:25:02.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllTeachersHandler.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\GetAll\\GetAllTeachersHandler.cs",
+              "RelativeDocumentMoniker": "BLL\\MediatR\\Teachers\\GetAll\\GetAllTeachersHandler.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\GetAll\\GetAllTeachersHandler.cs",
+              "RelativeToolTip": "BLL\\MediatR\\Teachers\\GetAll\\GetAllTeachersHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T10:08:27.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-07T08:35:15.224Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
