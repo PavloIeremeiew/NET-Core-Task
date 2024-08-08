@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using NET_Core_Task.BLL.DTO.Teacher;
 using NET_Core_Task.BLL.MediatR.Teachers;
+using NET_Core_Task.BLL.MediatR.Teachers.Delete;
 using NET_Core_Task.BLL.MediatR.Teachers.GetById;
+using NET_Core_Task.BLL.MediatR.Teachers.Update;
 
 namespace NET_Core_Task.WebAPI.Controllers
 {
@@ -40,16 +42,26 @@ namespace NET_Core_Task.WebAPI.Controllers
             return HandleResult(await Mediator.Send(new CreateTeacherCommand(teacher)));
         }
 
-        //[HttpDelete("{id:int}")]
-        //public async Task<IActionResult> Delete([FromRoute] int id)
-        //{
-        //    return HandleResult(await Mediator.Send(new DeleteTeacherCommand(id)));
-        //}
+        /// <summary>
+        /// Delete teacher
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            return HandleResult(await Mediator.Send(new DeleteTeacherCommand(id)));
+        }
 
-        //[HttpPut]
-        //public async Task<IActionResult> Update([FromBody] TeacherDTO teacher)
-        //{
-        //    return HandleResult(await Mediator.Send(new UpdateTeacherCommand(teacher)));
-        //}
+        /// <summary>
+        /// Update Teacher`s param
+        /// </summary>
+        /// <param name="teacher"></param>
+        /// <returns></returns>
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] TeacherUpdateDTO teacher)
+        {
+            return HandleResult(await Mediator.Send(new UpdateTeacherCommand(teacher)));
+        }
     }
 }

@@ -9,6 +9,7 @@ namespace NET_Core_Task.BLL.Mapping.Teachers
         public TeacherProfile()
         {
             CreateMap<Teacher, TeacherDTO>().ReverseMap();
+            CreateMap<Teacher, TeacherUpdateDTO>().ReverseMap();
         }
     }
 }

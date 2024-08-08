@@ -3,6 +3,7 @@ using FluentResults;
 using MediatR;
 using NET_Core_Task.BLL.DTO.Teacher;
 using NET_Core_Task.BLL.Services.Logger;
+using NET_Core_Task.BLL.Specification.Teahers;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
 namespace NET_Core_Task.BLL.MediatR.Teachers.GetById
@@ -20,9 +21,19 @@ namespace NET_Core_Task.BLL.MediatR.Teachers.GetById
             _logger = logger;
         }
 
-        public Task<Result<TeacherDTO>> Handle(GetTeacherByIdQuery request, CancellationToken cancellationToken)
+        public  async Task<Result<TeacherDTO>> Handle(GetTeacherByIdQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+
+            var teacher = await _repositoryWrapper
+               .TeachersRepository.GetFirstOrDefaultWithSpecAsync(new TeacherByIdSpec(request.id));
+            if(teacher is null)
+            {
+                var errorMsg = "Teacher is not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            return Result.Ok(_mapper.Map<TeacherDTO>(teacher));
         }
     }
 }

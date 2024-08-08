@@ -60,5 +60,19 @@
             <param name="teacher"></param>
             <returns></returns>
         </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Delete(System.Int32)">
+            <summary>
+            Delete teacher
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Update(NET_Core_Task.BLL.DTO.Teacher.TeacherUpdateDTO)">
+            <summary>
+            Update Teacher`s param
+            </summary>
+            <param name="teacher"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
