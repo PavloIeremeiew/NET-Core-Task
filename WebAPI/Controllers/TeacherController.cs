@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NET_Core_Task.BLL.DTO.Teacher;
 using NET_Core_Task.BLL.MediatR.Teachers;
+using NET_Core_Task.BLL.MediatR.Teachers.GetById;
 
 namespace NET_Core_Task.WebAPI.Controllers
 {
@@ -17,11 +18,16 @@ namespace NET_Core_Task.WebAPI.Controllers
             return HandleResult(await Mediator.Send(new GetAllTeachersQuery()));
         }
 
-        //[HttpGet("{id:int}")]
-        //public async Task<IActionResult> GetById([FromRoute] int id)
-        //{
-        //    return HandleResult(await Mediator.Send(new GetTeacherByIdQuery(id)));
-        //}
+        /// <summary>
+        /// Finds a teacher by ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById([FromRoute] int id)
+        {
+            return HandleResult(await Mediator.Send(new GetTeacherByIdQuery(id)));
+        }
 
         /// <summary>
         ///  Create teacher

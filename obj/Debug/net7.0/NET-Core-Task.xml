@@ -16,11 +16,42 @@
         <member name="M:NET_Core_Task.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:NET_Core_Task.Migrations.FixForeingKey">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.FixForeingKey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.FixForeingKey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.FixForeingKey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:NET_Core_Task.Migrations.TeacherForeingKey">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.TeacherForeingKey.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.TeacherForeingKey.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NET_Core_Task.Migrations.TeacherForeingKey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
         <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.GetAll">
             <summary>
             Finds a list of all teachers
             </summary>
             <returns>IEnumerable of TeacherDTO </returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.GetById(System.Int32)">
+            <summary>
+            Finds a teacher by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
         </member>
         <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Create(NET_Core_Task.BLL.DTO.Teacher.TeacherDTO)">
             <summary>
