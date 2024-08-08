@@ -2,7 +2,7 @@
 using MediatR;
 using NET_Core_Task.DAL.Entities;
 using NET_Core_Task.BLL.Behavior;
-using NET_Core_Task.BLL.DTO.Teacher;
+using NET_Core_Task.BLL.DTO.Teachers;
 
 namespace NET_Core_Task.BLL.MediatR.Teachers
 {

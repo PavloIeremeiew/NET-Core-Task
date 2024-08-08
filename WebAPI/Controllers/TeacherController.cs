@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using NET_Core_Task.BLL.DTO.Teacher;
+using NET_Core_Task.BLL.DTO.Teachers;
 using NET_Core_Task.BLL.MediatR.Teachers;
 using NET_Core_Task.BLL.MediatR.Teachers.Delete;
 using NET_Core_Task.BLL.MediatR.Teachers.GetById;

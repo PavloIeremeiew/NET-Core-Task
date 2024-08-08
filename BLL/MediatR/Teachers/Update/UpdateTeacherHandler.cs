@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using FluentResults;
 using MediatR;
-using NET_Core_Task.BLL.DTO.Teacher;
+using NET_Core_Task.BLL.DTO.Teachers;
 using NET_Core_Task.BLL.Services.Logger;
 using NET_Core_Task.DAL.Entities;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
