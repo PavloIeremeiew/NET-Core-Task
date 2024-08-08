@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\createteacherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\deleteteacherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\bll\\mediatr\\teachers\\create\\createteacherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:bll\\mediatr\\teachers\\create\\createteacherhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|c:\\users\\perem\\source\\repos\\net-core-task\\bll\\mediatr\\teachers\\create\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A98D98E5-0B33-4F02-97C3-FB18CE995B7F}|NET-Core-Task.csproj|solutionrelative:bll\\mediatr\\teachers\\create\\createteachercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\getteacherbyidhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\createteacherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\updateteacherhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1E84319-C778-4DBF-9008-88E3226F1C94}|..\\NET_Core_Task_Tests\\NET_Core_Task_Tests.csproj|c:\\users\\perem\\source\\repos\\net_core_task_tests\\mediator\\teachertests\\getallteachershandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 253,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GetTeacherByIdHandlerTests.cs",
               "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetTeacherByIdHandlerTests.cs",
               "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetTeacherByIdHandlerTests.cs",
               "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetTeacherByIdHandlerTests.cs",
               "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetTeacherByIdHandlerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAowFEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T08:35:51.957Z",
               "IsPinned": true,
@@ -48,70 +40,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CreateTeacherHandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
-              "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
-              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
-              "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T08:36:48.844Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "UpdateTeacherHandlerTests.cs",
               "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\UpdateTeacherHandlerTests.cs",
               "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\UpdateTeacherHandlerTests.cs",
               "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\UpdateTeacherHandlerTests.cs",
               "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\UpdateTeacherHandlerTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAgwA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T08:37:13.361Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-08-08T15:29:31.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DeleteTeacherHandlerTests.cs",
-              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\DeleteTeacherHandlerTests.cs",
-              "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\DeleteTeacherHandlerTests.cs",
-              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\DeleteTeacherHandlerTests.cs",
-              "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\DeleteTeacherHandlerTests.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAkwBEAAAAIAAAA",
+              "Title": "CreateTeacherHandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
+              "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\CreateTeacherHandlerTests.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACsAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T08:37:44.803Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateTeacherHandler.cs",
-              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\Create\\CreateTeacherHandler.cs",
-              "RelativeDocumentMoniker": "BLL\\MediatR\\Teachers\\Create\\CreateTeacherHandler.cs",
-              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\Create\\CreateTeacherHandler.cs",
-              "RelativeToolTip": "BLL\\MediatR\\Teachers\\Create\\CreateTeacherHandler.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAoAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T09:42:56.472Z",
+              "WhenOpened": "2024-08-08T15:29:20.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateTeacherCommand.cs",
-              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\Create\\CreateTeacherCommand.cs",
-              "RelativeDocumentMoniker": "BLL\\MediatR\\Teachers\\Create\\CreateTeacherCommand.cs",
-              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\BLL\\MediatR\\Teachers\\Create\\CreateTeacherCommand.cs",
-              "RelativeToolTip": "BLL\\MediatR\\Teachers\\Create\\CreateTeacherCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABrAAAA",
+              "Title": "GetAllTeachersHandlerTests.cs",
+              "DocumentMoniker": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetAllTeachersHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetAllTeachersHandlerTests.cs",
+              "ToolTip": "C:\\Users\\perem\\source\\repos\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetAllTeachersHandlerTests.cs",
+              "RelativeToolTip": "..\\NET_Core_Task_Tests\\MediatoR\\TeacherTests\\GetAllTeachersHandlerTests.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T09:49:23.184Z",
+              "WhenOpened": "2024-08-08T15:28:20.789Z",
               "EditorCaption": ""
             },
             {
