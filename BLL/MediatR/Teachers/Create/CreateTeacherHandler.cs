@@ -1,13 +1,14 @@
 ﻿using AutoMapper;
 using FluentResults;
 using MediatR;
+using NET_Core_Task.BLL.DTO.Teacher;
 using NET_Core_Task.BLL.Services.Logger;
 using NET_Core_Task.DAL.Entities;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
 namespace NET_Core_Task.BLL.MediatR.Teachers
 {
-    public class CreateTeacherHandler : IRequestHandler<CreateTeacherCommand, Result<Teacher>>
+    public class CreateTeacherHandler : IRequestHandler<CreateTeacherCommand, Result<TeacherDTO>>
     {
         private readonly IMapper _mapper;
         private readonly IRepositoryWrapper _repositoryWrapper;
@@ -19,7 +20,7 @@ namespace NET_Core_Task.BLL.MediatR.Teachers
             _mapper = mapper;
             _logger = logger;
         }
-        public async Task<Result<Teacher>> Handle(CreateTeacherCommand request, CancellationToken cancellationToken)
+        public async Task<Result<TeacherDTO>> Handle(CreateTeacherCommand request, CancellationToken cancellationToken)
         {
             var newStreetcode = _mapper.Map<Teacher>(request.TeacherCreateDTO);
             var repositoryTeachers = _repositoryWrapper.TeachersRepository;
@@ -36,7 +37,7 @@ namespace NET_Core_Task.BLL.MediatR.Teachers
 
             if (resultIsSuccess)
             {
-                return Result.Ok(_mapper.Map<Teacher>(entity));
+                return Result.Ok(_mapper.Map<TeacherDTO>(entity));
             }
             else
             {
