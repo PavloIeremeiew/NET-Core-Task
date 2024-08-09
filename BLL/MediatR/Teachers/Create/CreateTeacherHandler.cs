@@ -22,17 +22,17 @@ namespace NET_Core_Task.BLL.MediatR.Teachers
         }
         public async Task<Result<TeacherDTO>> Handle(CreateTeacherCommand request, CancellationToken cancellationToken)
         {
-            var newStreetcode = _mapper.Map<Teacher>(request.TeacherCreateDTO);
+            var teacher = _mapper.Map<Teacher>(request.TeacherCreateDTO);
             var repositoryTeachers = _repositoryWrapper.TeachersRepository;
 
-            if (newStreetcode is null)
+            if (teacher is null)
             {
                 string errorMsg = "Teacher is not found";
                 _logger.LogError(request, errorMsg);
                 return Result.Fail(new Error(errorMsg));
             }
 
-            var entity = await repositoryTeachers.CreateAsync(newStreetcode);
+            var entity = await repositoryTeachers.CreateAsync(teacher);
             bool resultIsSuccess = await _repositoryWrapper.SaveChangesAsync() > 0;
 
             if (resultIsSuccess)

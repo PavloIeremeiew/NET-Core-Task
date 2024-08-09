@@ -1,6 +1,9 @@
-﻿namespace NET_Core_Task.BLL.MediatR.Student.Create
+﻿using FluentResults;
+using NET_Core_Task.BLL.Behavior;
+using NET_Core_Task.BLL.DTO.Course;
+using NET_Core_Task.BLL.DTO.Student;
+
+namespace NET_Core_Task.BLL.MediatR.Students.Create
 {
-    public class CreateStudentCommand
-    {
-    }
+    public record CreateStudentCommand(StudentDTO StudentDTO) : IValidatableRequest<Result<StudentDTO>>;
 }

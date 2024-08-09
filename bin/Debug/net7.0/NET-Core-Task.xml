@@ -40,6 +40,34 @@
         <member name="M:NET_Core_Task.Migrations.TeacherForeingKey.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.CourseController.Create(NET_Core_Task.BLL.DTO.Course.CourseDTO)">
+            <summary>
+            Create course
+            </summary>
+            <param name="course"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.CourseController.Delete(System.Int32)">
+            <summary>
+            Delete course
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.StudentController.Create(NET_Core_Task.BLL.DTO.Student.StudentDTO)">
+            <summary>
+            cteate student
+            </summary>
+            <param name="student"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NET_Core_Task.WebAPI.Controllers.StudentController.Delete(System.Int32)">
+            <summary>
+            delete student
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.GetAll">
             <summary>
             Finds a list of all teachers
@@ -53,7 +81,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Create(NET_Core_Task.BLL.DTO.Teacher.TeacherDTO)">
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Create(NET_Core_Task.BLL.DTO.Teachers.TeacherDTO)">
             <summary>
              Create teacher
             </summary>
@@ -67,7 +95,7 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Update(NET_Core_Task.BLL.DTO.Teacher.TeacherUpdateDTO)">
+        <member name="M:NET_Core_Task.WebAPI.Controllers.TeacherController.Update(NET_Core_Task.BLL.DTO.Teachers.TeacherUpdateDTO)">
             <summary>
             Update Teacher`s param
             </summary>

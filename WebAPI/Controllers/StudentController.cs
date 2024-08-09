@@ -1,4 +1,9 @@
-﻿namespace NET_Core_Task.WebAPI.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+using NET_Core_Task.BLL.DTO.Student;
+using NET_Core_Task.BLL.MediatR.Students.Create;
+using NET_Core_Task.BLL.MediatR.Students.Delete;
+
+namespace NET_Core_Task.WebAPI.Controllers
 {
     public class StudentController : BaseApiController
     {
@@ -13,18 +18,27 @@
         //{
         //    return HandleResult(await Mediator.Send(new GetStudentByIdQuery(id)));
         //}
+        /// <summary>
+        /// cteate student
+        /// </summary>
+        /// <param name="student"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] StudentDTO student)
+        {
+            return HandleResult(await Mediator.Send(new CreateStudentCommand(student)));
+        }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create([FromBody] StudentCreateDTO student)
-        //{
-        //    return HandleResult(await Mediator.Send(new CreateStudentCommand(student)));
-        //}
-
-        //[HttpDelete("{id:int}")]
-        //public async Task<IActionResult> Delete([FromRoute] int id)
-        //{
-        //    return HandleResult(await Mediator.Send(new DeleteStudentCommand(id)));
-        //}
+        /// <summary>
+        /// delete student
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            return HandleResult(await Mediator.Send(new DeleteStudentCommand(id)));
+        }
 
         //[HttpPut]
         //public async Task<IActionResult> Update([FromBody] StudentDTO student)
