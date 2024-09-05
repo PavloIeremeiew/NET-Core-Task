@@ -2,6 +2,7 @@
 using FluentResults;
 using MediatR;
 using NET_Core_Task.BLL.DTO.Course;
+using NET_Core_Task.BLL.DTO.Teachers;
 using NET_Core_Task.BLL.Services.Logger;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
@@ -20,9 +21,20 @@ namespace NET_Core_Task.BLL.MediatR.Courses.GetAll
             _logger = logger;
         }
 
-        public Task<Result<IEnumerable<CourseDTO>>> Handle(GetAllCourseQuery request, CancellationToken cancellationToken)
+        public async Task<Result<IEnumerable<CourseDTO>>> Handle(GetAllCourseQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var courses = await _repositoryWrapper
+                .CoursesRepository
+                .GetAllAsync();
+
+            if (courses is null)
+            {
+                var errorMsg = "Courses are not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            return Result.Ok(_mapper.Map<IEnumerable<CourseDTO>>(courses));
         }
     }
 }

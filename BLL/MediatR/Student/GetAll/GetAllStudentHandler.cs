@@ -20,9 +20,20 @@ namespace NET_Core_Task.BLL.MediatR.Students.GetAll
             _logger = logger;
         }
 
-        public Task<Result<IEnumerable<StudentDTO>>> Handle(GetAllStudentQuery request, CancellationToken cancellationToken)
+        public async Task<Result<IEnumerable<StudentDTO>>> Handle(GetAllStudentQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var students = await _repositoryWrapper
+                .StudentsRepository
+                .GetAllAsync();
+
+            if (students is null)
+            {
+                var errorMsg = "Students are not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            return Result.Ok(_mapper.Map<IEnumerable<StudentDTO>>(students));
         }
     }
 }

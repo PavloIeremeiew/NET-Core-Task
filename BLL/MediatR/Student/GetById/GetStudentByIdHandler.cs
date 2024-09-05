@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
 using FluentResults;
 using MediatR;
+using NET_Core_Task.BLL.DTO.Course;
 using NET_Core_Task.BLL.DTO.Student;
 using NET_Core_Task.BLL.Services.Logger;
+using NET_Core_Task.BLL.Specification.Courses;
+using NET_Core_Task.BLL.Specification.Students;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
 namespace NET_Core_Task.BLL.MediatR.Students.GetById
@@ -20,9 +23,18 @@ namespace NET_Core_Task.BLL.MediatR.Students.GetById
             _logger = logger;
         }
 
-        public Task<Result<StudentDTO>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Result<StudentDTO>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var student = await _repositoryWrapper
+               .StudentsRepository.GetFirstOrDefaultWithSpecAsync(new StudentByIdSpec(request.id));
+            if (student is null)
+            {
+                var errorMsg = "Student is not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            return Result.Ok(_mapper.Map<StudentDTO>(student));
         }
     }
 }

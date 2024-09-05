@@ -2,7 +2,10 @@
 using FluentResults;
 using MediatR;
 using NET_Core_Task.BLL.DTO.Course;
+using NET_Core_Task.BLL.DTO.Teachers;
 using NET_Core_Task.BLL.Services.Logger;
+using NET_Core_Task.BLL.Specification.Courses;
+using NET_Core_Task.BLL.Specification.Teahers;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
 namespace NET_Core_Task.BLL.MediatR.Courses.GetById
@@ -20,9 +23,18 @@ namespace NET_Core_Task.BLL.MediatR.Courses.GetById
             _logger = logger;
         }
 
-        public Task<Result<CourseDTO>> Handle(GetCourseByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Result<CourseDTO>> Handle(GetCourseByIdQuery request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var course = await _repositoryWrapper
+               .CoursesRepository.GetFirstOrDefaultWithSpecAsync(new CourseByIdSpec(request.id));
+            if (course is null)
+            {
+                var errorMsg = "Course is not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            return Result.Ok(_mapper.Map<CourseDTO>(course));
         }
     }
 }

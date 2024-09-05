@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using FluentResults;
 using MediatR;
+using NET_Core_Task.BLL.DTO.Course;
 using NET_Core_Task.BLL.DTO.Student;
 using NET_Core_Task.BLL.Services.Logger;
+using NET_Core_Task.DAL.Entities;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 
 namespace NET_Core_Task.BLL.MediatR.Students.Update
@@ -20,9 +22,31 @@ namespace NET_Core_Task.BLL.MediatR.Students.Update
             _logger = logger;
         }
 
-        public Task<Result<StudentUpdateDTO>> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
+        public async Task<Result<StudentUpdateDTO>> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var student = _mapper.Map<Student>(request.Student);
+            if (student is null)
+            {
+                var errorMsg = "Student is not found";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
+
+            var response = _mapper.Map<StudentUpdateDTO>(student);
+
+            _repositoryWrapper.StudentsRepository.Update(student);
+            var resultIsSuccess = await _repositoryWrapper.SaveChangesAsync() > 0;
+
+            if (resultIsSuccess)
+            {
+                return Result.Ok(response);
+            }
+            else
+            {
+                var errorMsg = "Student is not updated";
+                _logger.LogError(request, errorMsg);
+                return Result.Fail(new Error(errorMsg));
+            }
         }
     }
 }

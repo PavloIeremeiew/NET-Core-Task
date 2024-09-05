@@ -2,22 +2,25 @@
 using NET_Core_Task.BLL.DTO.Course;
 using NET_Core_Task.BLL.MediatR.Courses.Create;
 using NET_Core_Task.BLL.MediatR.Courses.Delete;
+using NET_Core_Task.BLL.MediatR.Courses.GetAll;
+using NET_Core_Task.BLL.MediatR.Courses.GetById;
+using NET_Core_Task.BLL.MediatR.Courses.Update;
 
 namespace NET_Core_Task.WebAPI.Controllers
 {
     public class CourseController : BaseApiController
     {
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    return HandleResult(await Mediator.Send(new GetAllCoursesQuery()));
-        //}
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            return HandleResult(await Mediator.Send(new GetAllCourseQuery()));
+        }
 
-        //[HttpGet("{id:int}")]
-        //public async Task<IActionResult> GetById([FromRoute] int id)
-        //{
-        //    return HandleResult(await Mediator.Send(new GetCourseByIdQuery(id)));
-        //}
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> GetById([FromRoute] int id)
+        {
+            return HandleResult(await Mediator.Send(new GetCourseByIdQuery(id)));
+        }
 
         /// <summary>
         /// Create course
@@ -41,10 +44,10 @@ namespace NET_Core_Task.WebAPI.Controllers
             return HandleResult(await Mediator.Send(new DeleteCourseCommand(id)));
         }
 
-        //[HttpPut]
-        //public async Task<IActionResult> Update([FromBody] CourseDTO course)
-        //{
-        //    return HandleResult(await Mediator.Send(new UpdateCourseCommand(course)));
-        //}
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] CourseUpdateDTO course)
+        {
+            return HandleResult(await Mediator.Send(new UpdateCourseCommand(course)));
+        }
     }
 }
