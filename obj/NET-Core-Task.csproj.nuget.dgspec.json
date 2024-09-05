@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\NET-Core-Task.csproj": {}
+    "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\NET-Core-Task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\NET-Core-Task.csproj": {
+    "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\NET-Core-Task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\NET-Core-Task.csproj",
+        "projectUniqueName": "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\NET-Core-Task.csproj",
         "projectName": "NET-Core-Task",
-        "projectPath": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\NET-Core-Task.csproj",
+        "projectPath": "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\NET-Core-Task.csproj",
         "packagesPath": "C:\\Users\\perem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\perem\\source\\repos\\NET-Core-Task\\obj\\",
+        "outputPath": "C:\\Users\\perem\\Source\\Repos\\NET-Core-Task\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -87,6 +92,10 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -110,6 +119,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.9.0, )"
             }
           },
           "imports": [
@@ -131,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

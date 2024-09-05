@@ -1,4 +1,4 @@
-﻿namespace NET_Core_Task.BLL.DTO.Teacher
+﻿namespace NET_Core_Task.BLL.DTO.Teachers
 {
     public class TeacherDTO
     {

@@ -19,13 +19,25 @@ namespace NET_Core_Task.Migrations
                 .HasAnnotation("ProductVersion", "7.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("CourseStudent", b =>
+                {
+                    b.Property<int>("CoursesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StudentsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CoursesId", "StudentsId");
+
+                    b.HasIndex("StudentsId");
+
+                    b.ToTable("CourseStudent");
+                });
+
             modelBuilder.Entity("NET_Core_Task.DAL.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<int?>("StudentId")
                         .HasColumnType("int");
 
                     b.Property<int?>("TeacherId")
@@ -35,8 +47,6 @@ namespace NET_Core_Task.Migrations
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("StudentId");
 
                     b.HasIndex("TeacherId");
 
@@ -83,20 +93,31 @@ namespace NET_Core_Task.Migrations
                     b.ToTable("Teacher");
                 });
 
+            modelBuilder.Entity("CourseStudent", b =>
+                {
+                    b.HasOne("NET_Core_Task.DAL.Entities.Course", null)
+                        .WithMany()
+                        .HasForeignKey("CoursesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NET_Core_Task.DAL.Entities.Student", null)
+                        .WithMany()
+                        .HasForeignKey("StudentsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("NET_Core_Task.DAL.Entities.Course", b =>
                 {
-                    b.HasOne("NET_Core_Task.DAL.Entities.Student", null)
-                        .WithMany("Courses")
-                        .HasForeignKey("StudentId");
-
                     b.HasOne("NET_Core_Task.DAL.Entities.Teacher", "Teacher")
-                        .WithMany()
+                        .WithMany("Courses")
                         .HasForeignKey("TeacherId");
 
                     b.Navigation("Teacher");
                 });
 
-            modelBuilder.Entity("NET_Core_Task.DAL.Entities.Student", b =>
+            modelBuilder.Entity("NET_Core_Task.DAL.Entities.Teacher", b =>
                 {
                     b.Navigation("Courses");
                 });

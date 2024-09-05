@@ -3,7 +3,6 @@ using MediatR;
 using NET_Core_Task.BLL.Services.Logger;
 using NET_Core_Task.DAL.Repositories.Interfaces.Base;
 using NET_Core_Task.DAL.Repositories.Realizations.Base;
-using Serilog;
 
 namespace NET_Core_Task.WebAPI.Extensions
 {

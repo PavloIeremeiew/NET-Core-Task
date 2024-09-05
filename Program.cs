@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using NET_Core_Task.DAL.Persistence;
 using NET_Core_Task.WebAPI.Extensions;
+using System.Reflection;
 
 namespace NET_Core_Task
 {
@@ -17,7 +18,10 @@ namespace NET_Core_Task
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerGen( options =>
+            options.IncludeXmlComments(
+                Path.Combine(AppContext.BaseDirectory,
+                $"{Assembly.GetExecutingAssembly().GetName().Name}.xml")));
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
             builder.Services
